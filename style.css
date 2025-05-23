@@ -1,0 +1,141 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111827;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #1f2937;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #14b8a6;
+}
+
+/* Sections */
+section {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+section#home {
+  height: 100vh;
+  background: linear-gradient(to right, #1f2937, #111827);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section#home h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+section#home p {
+  color: #d1d5db;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+section#home a {
+  background-color: #14b8a6;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+section#home a:hover {
+  background-color: #0d9488;
+}
+
+section#about,
+section#portfolio {
+  background-color: #1f2937;
+}
+
+section h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+section p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #d1d5db;
+}
+
+/* Services */
+.services {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 2rem;
+}
+
+.service-box {
+  background-color: #1f2937;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.service-box h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Contact */
+#contact a {
+  color: #14b8a6;
+  text-decoration: underline;
+}
+
+#contact p {
+  margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: #111827;
+  text-align: center;
+  padding: 2rem;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
