@@ -1,5 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/submit-requirement", "destination": "/api/submit-requirement" }
-  ]
-}
