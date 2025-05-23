@@ -14,8 +14,8 @@ app.use(express.static('public'));
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'your.email@gmail.com',     // Replace with your email
-    pass: 'your-app-password'         // Replace with your app password
+    user: 'info.vengeanceservices@gmail.com',     // Replace with your email
+    pass: 'symq olop jzyo izvh'         // Replace with your app password
   }
 });
 
@@ -25,7 +25,7 @@ app.post('/submit-requirement', (req, res) => {
 
   const mailOptions = {
     from: email,
-    to: 'your.email@gmail.com',  // Where you want to receive submissions
+    to: 'info.vengeanceservices@gmail.com',  // Where you want to receive submissions
     subject: 'New Project Requirement',
     text: `
 Name: ${name}
